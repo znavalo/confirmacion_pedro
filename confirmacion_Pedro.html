@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedro</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tipografía moderna y juvenil */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+
+        .font-modern {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Para el título principal, usamos Playfair para un toque de elegancia */
+        .font-elegant {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Estilo para el contenedor principal de la invitación (vertical, adaptado a móvil) */
+        .invitation-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #eef2f6; /* Fondo gris/azul muy claro */
+        }
+        
+        /* Tarjeta de invitación, más limpia */
+        .invitation-card {
+            border: 4px solid #1e3a8a; /* Azul Marino Oscuro */
+            box-shadow: 0 8px 15px rgba(30, 58, 138, 0.2); /* Sombra sobria */
+            background-color: white;
+            padding: 3rem 1.5rem;
+            width: 95%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        /* Diseño responsivo para texto */
+        .text-header-mobile {
+            font-size: 2rem; /* 32px */
+            line-height: 1.1;
+        }
+        @media (min-width: 640px) {
+            .text-header-mobile {
+                font-size: 2.5rem; /* 40px */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="invitation-container">
+
+        <div class="invitation-card rounded-xl">
+
+            <!-- Encabezado y título del evento -->
+            <p class="font-modern text-gray-600 text-lg mb-2 font-semibold">
+                ¡Con ilusión, te invito a mi
+            </p>
+            <h1 class="font-elegant text-header-mobile text-blue-800 mb-6 font-extrabold tracking-tight uppercase">
+                Confirmación
+            </h1>
+            
+            <!-- Nombre del Confirmado (El anfitrión) -->
+            <h2 class="font-modern text-5xl text-gray-900 mb-6 font-bold sm:text-6xl">
+                Pedro
+            </h2>
+
+            <!-- Mensaje de Pedro -->
+            <p class="font-modern text-base text-gray-700 mb-8 border-t border-b border-gray-200 py-4 mx-auto max-w-sm">
+                "Este es un paso importante en mi camino de fe, y significa mucho para mí compartirlo contigo."
+            </p>
+
+            <!-- Separador visual (Cruz moderna) -->
+            <div class="text-blue-700 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11 12H5c-1.1 0-2 .9-2 2s.9 2 2 2h6v6c0 1.1.9 2 2 2s2-.9 2-2v-6h6c1.1 0 2-.9 2-2s-.9-2-2-2h-6V5c0-1.1-.9-2-2-2s-2 .9-2 2v7z"/>
+                </svg>
+            </div>
+
+
+            <!-- Detalles del Acto Religioso -->
+            <div class="space-y-4 font-modern text-gray-800 mb-10">
+                <p class="font-bold text-blue-700 text-xl mb-2">Ceremonia Religiosa:</p>
+                
+                <!-- Fecha y Hora -->
+                <div class="text-lg">
+                    <p class="font-bold">Viernes, 12 de Diciembre</p>
+                    <p>19:00 hrs</p>
+                </div>
+
+                <!-- Lugar de la Iglesia -->
+                <div class="text-lg pt-2">
+                    <p class="font-semibold">Iglesia del Santísimo Cristo del Rosario</p>
+                </div>
+                
+                <!-- Botón de Ubicación de la Iglesia -->
+                <a href="https://maps.app.goo.gl/EjemploDeUbicacionIglesia" 
+                   target="_blank" 
+                   class="inline-block bg-blue-600 text-white font-modern text-sm py-2 px-4 rounded-full shadow-md hover:bg-blue-700 transition duration-300">
+                    Ver Ubicación Iglesia
+                </a>
+            </div>
+
+            
+            <!-- Detalles de la Celebración (Cena) -->
+            <div class="space-y-4 font-modern text-gray-700 border-t border-gray-200 pt-8">
+                <p class="font-bold text-lg text-gray-800">¡Luego a celebrarlo!</p>
+                
+                <div class="text-base">
+                    <p class="font-bold">Cena en:</p>
+                    <p class="text-lg font-semibold text-gray-900">Cafetería Restaurante Rogelio</p>
+                </div>
+                
+                <!-- Botón de Ubicación del Restaurante -->
+                <a href="https://maps.app.goo.gl/EjemploDeUbicacionRestaurante" 
+                   target="_blank" 
+                   class="inline-block bg-gray-700 text-white font-modern text-sm py-2 px-4 rounded-full shadow-md hover:bg-gray-800 transition duration-300">
+                    Ver Ubicación Cena
+                </a>
+            </div>
+
+
+            <!-- Pie de página/RSVP -->
+            <p class="font-modern text-xs text-gray-400 mt-10 pt-4 border-t border-gray-100">
+                ¡Te espero! Por favor, confirma tu asistencia.
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
